@@ -1,3 +1,5 @@
+package JCA_Homework1;
+
 import java.sql.SQLOutput;
 
 public class Homework1 {
@@ -12,6 +14,8 @@ public class Homework1 {
         System.out.println(isNegative(5));
         System.out.println("Task7: ");
         greetings("Vasya");
+        System.out.println("Task8: ");
+        System.out.println(leapYear(2021));
 
 
 
@@ -50,7 +54,7 @@ public class Homework1 {
     //Написать метод, которому в качестве параметра передается целое число,
     // метод должен напечатать в консоль, положительное ли число передали или отрицательное.
     // Замечание: ноль считаем положительным числом.
-    public static int positiveOrNegative(int a) {
+    public static void positiveOrNegative(int a) {
         if (a < 0) {
             System.out.println(a + " is NEGATIVE");
         } else if (a >= 0) {
@@ -63,7 +67,7 @@ public class Homework1 {
     public static boolean isNegative(int a) {
         if (a < 0) {
             return true;}
-        else (a >= 0) {
+        else {
             return false;
         }
         }
@@ -77,7 +81,7 @@ public class Homework1 {
     //Написать метод, который определяет, является ли год високосным, и выводит сообщение в консоль.
     // Каждый 4-й год является високосным, кроме каждого 100-го, при этом каждый 400-й – високосный.
     public static boolean leapYear(int year) {
-        return (year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0);
+        return year % 4 == 0 && year % 100 != 0 || year % 400 == 0;
 
     }
 
