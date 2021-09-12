@@ -9,7 +9,7 @@ public class Cat extends Animal{
     }
 
     @Override
-    public void swim(int distance){ System.out.println(getName() + " want swim!"); }
+    public void swim(int distance){ System.out.println(getName() + " dont want swim!"); }
 
         public static int getCounter(){ return counter; }
     }
